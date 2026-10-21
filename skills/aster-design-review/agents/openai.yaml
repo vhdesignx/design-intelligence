@@ -1,0 +1,6 @@
+interface:
+  display_name: "aster design review"
+  short_description: "Crítica com evidência e verificação de correções"
+  default_prompt: "Use $aster-design-review para trabalhar nesta tarefa com contexto, evidência e verificação."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,56 @@
+/* Busca junto à marca; navegação complementar alinhada à direita em todas as rotas. */
+.tool-search{position:relative;width:290px;min-width:200px;margin-left:0;margin-bottom:7px;color:#4b5940}
+body .topbar nav{margin-left:auto}
+.search-field{display:flex;align-items:center;gap:10px;height:42px;padding:0 12px;border:1px solid #d6ddc9;border-radius:12px;background:linear-gradient(#fffdfb,#f9fbf4);box-shadow:inset 0 1px 0 #fff,0 1px 2px #24302105;transition:border-color 160ms,box-shadow 160ms}
+.search-field:focus-within{border-color:#94a86e;box-shadow:0 0 0 3px #667c2410,inset 0 1px 0 white}
+.search-field>.icon,.search-toggle .icon{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7}
+.search-field input{min-width:0;width:100%;border:0;outline:0;padding:0;background:transparent;color:#283123;font:inherit;font-size:12px;line-height:1.5}
+.search-field input::placeholder{color:#77816c}
+.search-clear,.search-close{flex:none;width:28px;height:32px;display:grid;place-items:center;font-size:22px;line-height:1;border:0;border-radius:7px;color:#69775b;background:transparent}
+.search-clear:hover,.search-close:hover{background:#edf1e4}
+.search-clear[hidden],.search-panel[hidden],.search-empty[hidden]{display:none}
+.search-toggle,.search-close{display:none}
+.search-panel{position:absolute;top:calc(100% + 12px);left:0;width:390px;max-width:calc(100vw - 40px);padding:8px;border:1px solid #dde2d5;border-radius:19px;background:#fff;box-shadow:0 3px 5px #27331d06,0 16px 40px -12px #27331d30;transform-origin:top center}
+.search-label{padding:8px 11px 10px;font-size:10px;font-weight:600;color:#7e8872;letter-spacing:.03em}
+#search-options{overflow:auto;max-height:min(440px,calc(100dvh - 170px));overscroll-behavior:contain;scrollbar-width:thin;scroll-padding:4px}
+#search-options a{display:flex;align-items:center;gap:12px;min-height:60px;padding:10px;border-radius:12px;color:#303b28}
+#search-options a:hover,#search-options a[aria-selected=true]{background:#f0f3e8}
+#search-options strong{display:block;font-size:12px;line-height:1.4;font-weight:600}
+#search-options small{display:block;font-size:10px;color:#818a76;margin-top:3px}
+.search-symbol{display:grid;place-items:center;flex:none;width:34px;height:36px;border-radius:9px;border:1px solid #e5eadb;background:linear-gradient(160deg,#fff,#f4f6ee);box-shadow:inset 0 1px 0 white;color:#7e9642}
+.search-symbol .icon{width:18px;height:18px}
+.search-arrow{margin-left:auto;color:#98a288;font-size:14px}
+.search-empty{padding:18px 12px 24px}
+.search-empty strong{font-size:13px;font-weight:600}
+.search-empty p{font-size:12px;margin-top:6px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.workspace{scroll-margin-top:110px}
+#main:focus,#catalog-title:focus{outline:none}
+@media(max-width:1000px){
+ .tool-search{position:static;min-width:0;width:44px;flex:none}
+ .search-toggle{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;border:1px solid #d3dcc4;background:#ffffff80;box-shadow:inset 0 1px 0 #fff7}
+ .search-field{display:none}
+ .is-open .search-field{position:absolute;display:flex;inset:2px 3px 8px;height:auto;z-index:2;padding:0 11px;border-radius:13px;background:#fff}
+ .is-open .search-field input{font-size:16px}
+ .is-open .search-toggle{visibility:hidden}
+ .is-open .search-clear{display:none}
+ .is-open .search-close{display:grid;width:40px;height:40px}
+ .search-panel{left:0;right:0;top:calc(100% + 7px);width:auto;max-width:none;border-radius:17px}
+ body .topbar:has(.tool-search.is-open)>.brand,body .topbar:has(.tool-search.is-open)>nav{visibility:hidden}
+ body .topbar{gap:15px}
+ body .topbar nav{gap:20px}
+}
+@media(max-width:760px){
+ .tool-search{margin-bottom:4px}
+ body .topbar{gap:8px;padding-right:7px}
+ body .topbar nav{gap:0}
+ .search-toggle{width:40px;height:40px;border-radius:11px}
+ .tool-search{width:40px}
+ .search-panel{top:calc(100% + 5px);padding:6px}
+ #search-options a{min-height:61px;padding:9px}
+ #search-options{max-height:calc(100dvh - 150px)}
+ .workspace{scroll-margin-top:90px}
+}
+@media(max-width:420px){body .topbar{gap:5px;padding-right:5px}.search-toggle{border:0;background:transparent;box-shadow:none}.search-panel{left:-2px;right:-2px}}
+@media(prefers-reduced-motion:reduce){.search-field{transition:none}}
+@media print{.tool-search{display:none}}

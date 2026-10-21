@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-20",
+  "passed": 15,
+  "tests": [
+    "Leitura brasileira, agrupamento, vazio e precisão",
+    "Safra: 120 mil, 20 ha, 1200 sacas de 60 kg",
+    "Equilíbrio e saldo positivo, negativo, zero custo",
+    "Equilíbrio arredonda mínimos para cima",
+    "Leite: decomposição COE, COT e CT",
+    "Conversão entre todas as unidades preserva área",
+    "Parcelamento a taxa zero e taxa positiva",
+    "Taxa implícita negativa, zero e entrada sem financiamento",
+    "120 parcelas, entrada e desconto no tempo",
+    "ITR: exemplo 80% exatos = 0,40% e R$ 3.200",
+    "ITR: imediatamente acima de 80% muda faixa",
+    "ITR: fronteiras de GU 30, 50, 65 e 80%",
+    "ITR: fronteiras de área total",
+    "ITR: mínimo, sem área aproveitável e exclusão total",
+    "ITR: rejeita áreas incompatíveis e não afirma isenção"
+  ]
+}

@@ -1,0 +1,58 @@
+/* Dados da conta: uma superfície por controle, rótulo persistente e estados próprios. */
+.calc-shell:has(.account-form){grid-template-columns:minmax(410px,.88fr) minmax(0,1.32fr)}
+.input-panel{background:#fff;padding:30px}
+.input-panel .panel-heading{align-items:center;margin-bottom:25px;gap:12px}
+.input-panel .panel-heading h2{font-size:20px;letter-spacing:-.045em}
+.input-panel #example{border:1px solid #dce3d2;border-radius:8px;padding:8px 10px;min-height:36px;background:#f7f9f1;color:#475e22;white-space:nowrap}
+.input-panel #example:hover{background:#edf2e2;border-color:#b7c79a}
+.account-form .field-grid{gap:18px 14px;align-items:start}
+.account-control,.account-select{width:100%;min-width:0;min-height:80px;background:#f7f8f4;border:1px solid #dce1d4;border-radius:11px;padding:12px 15px;box-shadow:0 1px 1px #293b1f03;transition:background 180ms,border-color 180ms,box-shadow 220ms}
+.account-control:hover,.account-select:hover{border-color:#bac7a8;background:#fbfcf8}
+.account-control:focus-within,.account-select:focus-visible,.account-select[aria-expanded=true]{background:#fff;border-color:#829d51;box-shadow:0 0 0 3px #809c4118,0 3px 9px #283a1810;outline:0}
+.account-label{display:block;font-size:11px;font-weight:500;line-height:1.4;color:#5f6c52;letter-spacing:0;transition:color 180ms}
+.account-control:focus-within .account-label,.account-select[aria-expanded=true] .account-label{color:#4b6629}
+.account-input-row{display:flex;align-items:baseline;gap:9px;min-width:0;margin-top:7px}
+.account-input{flex:1;width:0;min-width:0;border:0;background:transparent;color:#28371f;font-size:23px;font-weight:500;font-variant-numeric:tabular-nums;line-height:1.3;letter-spacing:-.025em;padding:0;border-radius:0;outline:none!important;box-shadow:none}
+.account-input::placeholder{color:#98a28b;font-weight:400}
+.input-prefix{color:#778567;font-size:15px;font-weight:500;flex:none}
+.input-unit{font-size:12px;line-height:1.2;color:#72815e;white-space:nowrap;flex:none}
+.account-select{display:flex;align-items:center;justify-content:space-between;text-align:left;gap:14px;cursor:pointer;font:inherit;line-height:1.4}
+.select-copy{display:block;min-width:0}
+.select-value{display:block;font-size:16px;font-weight:500;color:#2f4025;line-height:1.4;margin-top:7px;overflow-wrap:anywhere}
+.select-chevron{width:19px;height:19px;flex:none;color:#6a7c50;transition:transform 220ms cubic-bezier(.16,1,.3,1)}
+.account-select[aria-expanded=true] .select-chevron{transform:rotate(180deg)}
+.account-form .field-help{color:#748067;font-size:11px;line-height:1.5;margin:6px 2px 0}
+.account-form .field-help:empty{display:none}
+.account-form .error-message{font-size:11px;line-height:1.5;margin:6px 2px 0;color:#a13c2c}
+.account-form .invalid .account-control,.account-form .invalid .account-select{border-color:#c1705f;background:#fffaf7;box-shadow:0 0 0 3px #b6503310}
+.account-form .invalid .account-label{color:#9b4a38}
+.account-form .form-actions{margin-top:25px;gap:13px}
+.account-form .form-actions .button{min-height:48px;background:#344c25;border-radius:9px;box-shadow:inset 0 1px 0 #ffffff12,0 2px 4px #293b1810}
+.account-form .form-actions .button:hover{background:#405f2a;transform:none;box-shadow:0 4px 12px #293b1818}
+.account-form .form-actions .button:active{background:#293d1c;transform:translateY(1px)}
+.account-form .form-note{margin-top:13px;font-size:10px;color:#7c856f;line-height:1.5}
+.account-options{position:fixed;z-index:60;overflow-y:auto;overscroll-behavior:contain;padding:6px;background:#fff;border:1px solid #dbe2d0;border-radius:13px;box-shadow:0 14px 35px -10px #26381840,0 2px 6px #2638180a;scrollbar-width:thin;scrollbar-color:#c5d0b7 transparent}
+.account-option{display:flex;align-items:center;justify-content:space-between;gap:13px;padding:13px 12px;border-radius:8px;cursor:pointer;user-select:none;color:#2f4025;min-height:46px;transition:background 130ms,box-shadow 130ms}
+.option-text{display:block;min-width:0}
+.option-title{display:block;font-size:14px;font-weight:500;line-height:1.4;overflow-wrap:anywhere}
+.option-hint{display:block;color:#7b856e;font-size:11px;line-height:1.5;margin-top:3px;max-width:330px}
+.account-option[aria-selected=true]{background:#f1f5e8}
+.account-option[data-active=true]{background:#eaf0de;box-shadow:inset 0 0 0 1px #d3dfbd}
+.option-check{width:18px;height:18px;flex:none;color:#648336;opacity:0}
+.account-option[aria-selected=true] .option-check{opacity:1}
+@media(max-width:1000px){.input-panel{padding:24px}.input-panel .panel-heading h2{font-size:18px}.account-control,.account-select{padding:12px 13px}.account-input{font-size:21px}.select-value{font-size:15px}}
+@media(max-width:960px){.calc-shell:has(.account-form){grid-template-columns:1fr}.input-panel{border-right:0;border-bottom:1px solid var(--line)}}
+@media(max-width:760px){.input-panel{padding:24px}.account-form .field-grid{gap:17px 13px}.account-control,.account-select{min-height:80px}.account-label{font-size:11px}.account-input{font-size:23px}.select-value{font-size:16px}.account-form .field-help{font-size:11px}.input-panel #example{min-height:38px}.account-options{max-width:calc(100vw - 24px)}.account-option{padding:14px 12px}}
+@media(max-width:420px){.input-panel{padding:21px 18px}.input-panel .panel-heading{gap:8px;margin-bottom:21px}.input-panel .panel-heading h2{font-size:18px}.input-panel #example{font-size:10px;padding:8px}.account-control,.account-select{padding:12px}.account-input{font-size:21px}.account-input-row{gap:7px}.input-unit{font-size:11px}.account-form .field-grid{gap:16px 11px}.account-form .form-note{font-size:10px}}
+@media(max-width:350px){.input-panel .panel-heading{align-items:start;flex-direction:column;gap:10px}.account-form .field-grid{grid-template-columns:1fr}.account-label{font-size:12px}.account-input{font-size:23px}}
+@media(prefers-reduced-motion:reduce){.account-control,.account-select,.select-chevron,.account-option,.account-label{transition:none}}
+/* O apoio precisa continuar legível em telas pequenas e em fundos claros. */
+.account-label,.account-form .field-help,.account-form .error-message,.option-hint{font-size:12px}
+.account-form .field-help,.option-hint{color:#68745d}
+.input-prefix{color:#677658}
+.input-unit{color:#657455}
+.account-input::placeholder{color:#68745d}
+.account-form .form-note{font-size:11px;color:#68745d}
+.input-panel #example{font-size:12px;min-height:40px}
+@media(max-width:420px){.account-input{font-size:23px}.input-unit{font-size:12px}}
+@media print{.account-options{display:none}.account-control,.account-select{background:#fff;box-shadow:none;min-height:55px;padding:7px}.account-input{font-size:14px}.select-value{font-size:12px}.input-panel{padding:10px 0}}

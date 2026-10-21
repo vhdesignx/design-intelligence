@@ -1,0 +1,42 @@
+/* Impressão é documento: marca simples, dados completos e sem controles da tela. */
+.print-watermark,.print-cashflow{display:none}
+@page{size:A4;margin:14mm 15mm 15mm}
+@media print{
+ *,*::before,*::after{animation:none!important;transition:none!important;box-shadow:none!important;text-shadow:none!important}
+ html,body{height:auto!important;overflow:visible!important;background:white!important;scrollbar-gutter:auto!important}
+ body{margin:0;color:#263023;font-size:10pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ body>.print-watermark{display:block;position:fixed;left:50%;top:50%;width:105mm;height:105mm;transform:translate(-50%,-50%);opacity:.045;z-index:0;pointer-events:none}
+ body .header-stage,body .topbar,body .brand{position:static;width:auto;max-width:none;height:auto;min-height:0;margin:0;padding:0;border:0;border-radius:0;background:transparent;filter:none;clip-path:none;transform:none;isolation:auto}
+ body .header-stage{position:relative;z-index:1;margin-bottom:6mm}
+ body .topbar,body .brand{display:block}
+ body .brand img{display:block;width:42mm;height:auto;filter:none}
+ body .header-stage::before,body .header-stage::after,body .topbar::before,body .topbar::after,body .brand::before,body .brand::after{content:none!important;display:none!important}
+ body .topbar nav,.tool-search,.tool-toolbar,.skip,.result-actions,.scenario-save-hint,.schedule-link,.form-actions,.form-note,.entry-notice,dialog,.site-footer,#toast,.field-study{display:none!important}
+ #main{position:relative;z-index:1;transform:none!important}
+ .workspace{width:auto;max-width:none;margin:0!important;padding:0}
+ .workspace-heading{margin-bottom:5mm;break-after:avoid}
+ .workspace h1{font-size:21pt}.workspace-heading p{font-size:9pt}
+ .calc-shell,.input-panel,.result-panel,.result-content{display:block;overflow:visible!important;height:auto;min-height:0;border:0;border-radius:0;background:transparent!important;transform:none!important;opacity:1!important}
+ .input-panel{padding:0 0 4mm;break-inside:avoid}
+ .input-panel .panel-heading,.field-help{display:none}
+ .field-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3mm}
+ .field-group.wide{grid-column:auto}
+ body .account-control,body .account-select{min-height:15mm;padding:2mm 3mm;background:transparent!important;box-shadow:none!important;break-inside:avoid}
+ body .account-input{font-size:12pt}.input-prefix,.input-unit{font-size:9pt}
+ .result-panel{padding:3mm 0 0}
+ .result-toolbar{margin-bottom:2mm;min-height:0;break-after:avoid}
+ .result-metrics{padding:3mm 0;margin-top:2mm;break-inside:avoid}
+ .big-value{font-size:29pt}.metric-value{font-size:16pt}
+ .result-visual{margin-top:4mm;break-inside:avoid}
+ .visual-heading{margin-bottom:3mm}
+ .insight{background:transparent;border-color:#d8ddd2;padding:3mm;margin-top:4mm;break-inside:avoid}
+ .print-cashflow{display:block;margin-top:6mm;break-before:page;page-break-before:always}
+ .print-cashflow h2{font-size:14pt;margin:0 0 3mm;break-after:avoid}
+ .print-cashflow .cashflow-table{width:100%;margin:0;font-size:9pt;border-collapse:collapse}
+ .print-cashflow thead{display:table-header-group}
+ .print-cashflow tfoot{display:table-row-group}
+ .print-cashflow tr{break-inside:avoid;page-break-inside:avoid}
+ .print-cashflow th,.print-cashflow td{padding:2.5mm 2mm}
+ .print-cashflow thead th{position:static;background:transparent;box-shadow:none}
+ .print-only{margin-top:5mm;font-size:8pt;line-height:1.5}
+}

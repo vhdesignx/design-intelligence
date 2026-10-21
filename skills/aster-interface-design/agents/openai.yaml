@@ -1,0 +1,6 @@
+interface:
+  display_name: "aster interface design"
+  short_description: "Interfaces completas, adaptativas e coerentes"
+  default_prompt: "Use $aster-interface-design para trabalhar nesta tarefa com contexto, evidência e verificação."
+policy:
+  allow_implicit_invocation: true

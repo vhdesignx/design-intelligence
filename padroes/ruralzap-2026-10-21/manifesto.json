@@ -1,0 +1,278 @@
+{
+  "version": "1.0.0",
+  "approvedOn": "2026-10-21",
+  "source": "propostas/ruralzap-ferramentas-2026-10-20",
+  "scope": "Snapshot aprovado. Dados de cenário locais do navegador não incluídos.",
+  "files": [
+    {
+      "file": "demo/index.html",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/index.html",
+      "bytes": 4355,
+      "sha256": "c4bd1bca7b96a7e26a188dddfea48d32b4fa530cffe77682a8c86efc1c7f2215"
+    },
+    {
+      "file": "demo/styles.css",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/styles.css",
+      "bytes": 28368,
+      "sha256": "5c4860115dffa8bf5fb3e4cbbbf3db2a0a1f8c1646d43e76ca36c65c0df2b20f"
+    },
+    {
+      "file": "demo/controles.css",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/controles.css",
+      "bytes": 6701,
+      "sha256": "94750fe39c5035d590042fa40766e858d755940d53987a20a65accc204cd4796"
+    },
+    {
+      "file": "demo/interface.css",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/interface.css",
+      "bytes": 20511,
+      "sha256": "d06d6cd4423dc28fa2ce3d8297396b824fef95963df463c114a3719a6812f01e"
+    },
+    {
+      "file": "demo/banner.css",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/banner.css",
+      "bytes": 7319,
+      "sha256": "f89746efadee92c3415985ede5c90b581d75595da196df1f3ac333370497e062"
+    },
+    {
+      "file": "demo/busca.css",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/busca.css",
+      "bytes": 4456,
+      "sha256": "e0a781a4df27a37274ccf4acc7580a2d4818110677a86ec6f2985cace03059d8"
+    },
+    {
+      "file": "demo/impressao.css",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/impressao.css",
+      "bytes": 3461,
+      "sha256": "dc063e7e8ac08d94a7e57d45e3dee248644f98d70b2553214af2a5c05756eef7"
+    },
+    {
+      "file": "demo/app.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/app.js",
+      "bytes": 60464,
+      "sha256": "a0ed5aba4ed0483887263088801a7b684dc991c2b00e3240d661cbcddb9b7638"
+    },
+    {
+      "file": "demo/calculos.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/calculos.js",
+      "bytes": 4302,
+      "sha256": "577d6a37313bf8b96e044568f502932fc5e90db6337533fa05c7c9e95ec37bb1"
+    },
+    {
+      "file": "demo/numeros.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/numeros.js",
+      "bytes": 3965,
+      "sha256": "ba0be132b6f7c70db754cba4b633c25144f8cdde79469c46d1033568922c01ee"
+    },
+    {
+      "file": "demo/controles.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/controles.js",
+      "bytes": 15579,
+      "sha256": "1aa52f97c13941d2d4df2d2b2306cd9b044f105d68d99412e021d4d24360e460"
+    },
+    {
+      "file": "demo/banner.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/banner.js",
+      "bytes": 2775,
+      "sha256": "c25278950982edbe84c2b7007362d3229883043b20861d86e66f6f8fc10de21d"
+    },
+    {
+      "file": "demo/navegacao.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/navegacao.js",
+      "bytes": 5931,
+      "sha256": "1b55122f0af465908cf4f5da1c067dcbbd77afa452b7f896aa9bab51e5b8153d"
+    },
+    {
+      "file": "demo/busca.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/busca.js",
+      "bytes": 5122,
+      "sha256": "03bd6544cb8a72dc296c9b64b05a4f6cadf2f862f754e422c9b4011120305cc3"
+    },
+    {
+      "file": "demo/rolagem.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/rolagem.js",
+      "bytes": 3144,
+      "sha256": "65a2b20b2dce55405c647d31660ed23aede25951457441ae2ae99f063daaefa9"
+    },
+    {
+      "file": "demo/equilibrio.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/equilibrio.js",
+      "bytes": 1148,
+      "sha256": "f23df6e37801b6f9992f39f042d3b5abb3313fcb7658479fb800f15e9a8e11a8"
+    },
+    {
+      "file": "demo/exportacoes.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/exportacoes.js",
+      "bytes": 11861,
+      "sha256": "a0b3df1f6ada9b11980935c91ddecd0c5f0a3e991b59714662dee7f2003c5e2b"
+    },
+    {
+      "file": "demo/cenarios.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/cenarios.js",
+      "bytes": 2456,
+      "sha256": "2e18bd28a837dd8e3d1609613bcbf3a6465de1c5415e3f5767d57b05330aa329"
+    },
+    {
+      "file": "demo/estudo-campos/estudo.css",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/estudo-campos/estudo.css",
+      "bytes": 12492,
+      "sha256": "6a803a7ac23c31fe41c412e307a563decb0d9b197bcb515b6e7ec8ed6e44ad8e"
+    },
+    {
+      "file": "demo/estudo-campos/estudo.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/estudo-campos/estudo.js",
+      "bytes": 615,
+      "sha256": "73b4c8dd7aa699492f2891be0e0eb933d8b8cf5ff37f7abafd38ee035521e58f"
+    },
+    {
+      "file": "demo/assets/fazenda.png",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/assets/fazenda.png",
+      "bytes": 2564635,
+      "sha256": "22b8562478299733ba2c56eaa1344a0edab79d25ee2a4b940e94b12b40e6f877"
+    },
+    {
+      "file": "demo/assets/ruralzap.svg",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/assets/ruralzap.svg",
+      "bytes": 11108,
+      "sha256": "21d216e05282872c4b6cf20f5d24f267e59b27c61c5829e481750adf3be1e1d8"
+    },
+    {
+      "file": "demo/assets/ruralzap-mark-mask.svg",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/assets/ruralzap-mark-mask.svg",
+      "bytes": 3068,
+      "sha256": "26af7e9f182a55bc83239c03d2066e3fa8188e4793daeedbff37497d97144552"
+    },
+    {
+      "file": "demo/assets/relatorio-ruralzap.xlsx",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/assets/relatorio-ruralzap.xlsx",
+      "bytes": 43212,
+      "sha256": "777ed75427680c5848cf355759114f24cf09b213a1da4dfe9b09be9e68f5634e"
+    },
+    {
+      "file": "demo/assets/manrope-400.ttf",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/assets/manrope-400.ttf",
+      "bytes": 94972,
+      "sha256": "a13d9b41b0a471ce58f0e46d377fa3cc76615e4632c3b15eb397caadf7a13f0a"
+    },
+    {
+      "file": "demo/assets/manrope-500.ttf",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/assets/manrope-500.ttf",
+      "bytes": 95060,
+      "sha256": "f433e5d333be1128d8ec8a28b8aadd0314d10e14e4105406076666bc830fc15d"
+    },
+    {
+      "file": "demo/assets/manrope-600.ttf",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/assets/manrope-600.ttf",
+      "bytes": 95096,
+      "sha256": "6bad1a774228464cc88b8b0271555b266f7a3c64a7bedf15e165fdab4f6ac0ce"
+    },
+    {
+      "file": "demo/assets/manrope-700.ttf",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/assets/manrope-700.ttf",
+      "bytes": 94928,
+      "sha256": "b9584e099e0e7f1e1e914c3037aabb9010c50346a3ce8df5eeeeecc0563044d8"
+    },
+    {
+      "file": "demo/assets/Manrope-OFL.txt",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/assets/Manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "file": "demo/vendor/lenis-1.3.27/lenis.css",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/vendor/lenis-1.3.27/lenis.css",
+      "bytes": 513,
+      "sha256": "2f668ae84a668327f246faf8a770383a2bf69196d214290fbc4d5548910606c5"
+    },
+    {
+      "file": "demo/vendor/lenis-1.3.27/lenis.mjs",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/vendor/lenis-1.3.27/lenis.mjs",
+      "bytes": 33274,
+      "sha256": "4cdb25138c7233e7419f630d9536adb41d71fa51906c059f0a27a1268ddedacc"
+    },
+    {
+      "file": "demo/vendor/lenis-1.3.27/LICENSE",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/vendor/lenis-1.3.27/LICENSE",
+      "bytes": 1088,
+      "sha256": "7d1896b31f2eed9f286b05faca067c4e35b2f109ae7c4ed5105220e2d2820228"
+    },
+    {
+      "file": "demo/vendor/exceljs-4.4.0/exceljs.min.js",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/vendor/exceljs-4.4.0/exceljs.min.js",
+      "bytes": 947702,
+      "sha256": "7e49da68588e250dbb8bba190d2caa8ab3787cc0284bda1d8b2f805c4df742c9"
+    },
+    {
+      "file": "demo/vendor/exceljs-4.4.0/LICENSE",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/vendor/exceljs-4.4.0/LICENSE",
+      "bytes": 1084,
+      "sha256": "2ed526b7e7c7681dc2347995b5036ddf73dc27d0539cdea59b6d4a72b63a57a0"
+    },
+    {
+      "file": "demo/vendor/exceljs-4.4.0/ORIGEM.md",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/vendor/exceljs-4.4.0/ORIGEM.md",
+      "bytes": 475,
+      "sha256": "ceda6fcad03be2693aec10b979d519016386db5310f538d7f1321f4ae323a03e"
+    },
+    {
+      "file": "demo/testes/calculos.test.cjs",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/testes/calculos.test.cjs",
+      "bytes": 4722,
+      "sha256": "53bc247b504e4e0ba957b5cf5bbbc30f03fa1d0a774b89920fbd154e85046fb1"
+    },
+    {
+      "file": "demo/testes/numeros.test.cjs",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/testes/numeros.test.cjs",
+      "bytes": 4613,
+      "sha256": "ab6fa718fa92dfcbf71f63f7546d48138f5cf06dfb601c9b94815c53631de5ad"
+    },
+    {
+      "file": "demo/testes/equilibrio.test.cjs",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/testes/equilibrio.test.cjs",
+      "bytes": 1241,
+      "sha256": "8724b082b8bb9c4e895927eee16cbddd2cd6ceeb9c4a5e27012415361374d6af"
+    },
+    {
+      "file": "demo/testes/cenarios.test.cjs",
+      "source": "propostas/ruralzap-ferramentas-2026-10-20/testes/cenarios.test.cjs",
+      "bytes": 3014,
+      "sha256": "9d90ec093be082d7288583948d3ba2045af366aa7c7ee3f6fad86b48aa02f061"
+    },
+    {
+      "file": "ilustracoes/safra.svg",
+      "source": "app.js:illustration(safra)",
+      "bytes": 1035,
+      "sha256": "5673e3677332006bd76701ab8326469063fba1dc18cc4a1fb6c2a6ea855f1f8c"
+    },
+    {
+      "file": "ilustracoes/equilibrio.svg",
+      "source": "app.js:illustration(equilibrio)",
+      "bytes": 1051,
+      "sha256": "3cd19056a8bf124d77db808670ee0e046089d79368be42e82893611c2c17ea90"
+    },
+    {
+      "file": "ilustracoes/compra.svg",
+      "source": "app.js:illustration(compra)",
+      "bytes": 1209,
+      "sha256": "52a22cecdf66c0422b5ff790bc1aa8df619de8e6741679b67464a37fae2f9ca2"
+    },
+    {
+      "file": "ilustracoes/leite.svg",
+      "source": "app.js:illustration(leite)",
+      "bytes": 891,
+      "sha256": "87e19d4853818bc132ff5cbe14918e04a3a5fb717e3c3aca86bcf858fc4eb1a8"
+    },
+    {
+      "file": "ilustracoes/areas.svg",
+      "source": "app.js:illustration(areas)",
+      "bytes": 1033,
+      "sha256": "925754dc11c2c3e5bb88e7b56e55561867d5eaed8a1aabc12233762f45cfe83e"
+    },
+    {
+      "file": "ilustracoes/itr.svg",
+      "source": "app.js:illustration(itr)",
+      "bytes": 868,
+      "sha256": "fe89160e43464636fe387ac63651ae0fb7674d541e24d7501dbc3e6b7bd4d5ee"
+    }
+  ]
+}

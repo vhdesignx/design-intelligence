@@ -1,0 +1,24 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const C=require('../calculos.js');
+const done=[];
+function test(name,fn){fn();done.push(name);console.log('OK '+name);}
+const close=(a,b,t=1e-8)=>assert.ok(Math.abs(a-b)<t,`${a} != ${b}`);
+test('Leitura brasileira, agrupamento, vazio e precisão',()=>{close(C.parse('1.234,56',2),1234.56);close(C.parse('0'),0);for(const s of ['','1.23','1,234.56','1e4','-2','Infinity','1.000.000.001'])assert.throws(()=>C.parse(s));assert.throws(()=>C.parse('0,001',2));});
+test('Safra: 120 mil, 20 ha, 1200 sacas de 60 kg',()=>{const r=C.calc('safra',{custo:120000,area:20,producao:1200,peso:60});assert.equal(r.hectare,6000);assert.equal(r.saca,100);assert.equal(r.produtividade,60);assert.equal(r.kg,3600);});
+test('Equilíbrio e saldo positivo, negativo, zero custo',()=>{let r=C.calc('equilibrio',{custo:6000,preco:120,produtividade:60,peso:60});assert.equal(r.sacas,50);assert.equal(r.preco,100);assert.equal(r.saldo,1200);r=C.calc('equilibrio',{custo:6000,preco:100,produtividade:40,peso:60});assert.equal(r.saldo,-2000);assert.equal(C.calc('equilibrio',{custo:0,preco:100,produtividade:40,peso:60}).sacas,0);});
+test('Equilíbrio arredonda mínimos para cima',()=>{const r=C.calc('equilibrio',{custo:100,preco:3,produtividade:3,peso:60});assert.equal(r.sacas,33.34);assert.equal(r.preco,33.34);});
+test('Leite: decomposição COE, COT e CT',()=>{const r=C.calc('leite',{litros:15000,coe:22500,depreciacao:1200,familia:1800,oportunidade:1500});assert.equal(r.coe,1.5);assert.equal(r.cot,1.7);assert.equal(r.ct,1.8);assert.equal(r.total,27000);});
+test('Conversão entre todas as unidades preserva área',()=>{for(const a of Object.keys(C.units))for(const b of Object.keys(C.units)){let r=C.calc('areas',{quantidade:10,origem:a,destino:b});let back=C.calc('areas',{quantidade:r.destino,origem:b,destino:a});close(back.destino,10);}assert.equal(C.calc('areas',{quantidade:1,origem:'paulista',destino:'m2'}).destino,24200);assert.equal(C.calc('areas',{quantidade:0,origem:'ha',destino:'baiano'}).destino,0);});
+test('Parcelamento a taxa zero e taxa positiva',()=>{let r=C.calc('compra',{vista:10000,entrada:0,parcela:1800,meses:6,taxa:0});assert.equal(r.presente,10800);assert.equal(r.diferencaVP,800);r=C.calc('compra',{vista:10000,entrada:0,parcela:1800,meses:6,taxa:1});assert.equal(r.presente,10431.86);assert.equal(r.diferencaVP,431.86);close(C.pv(1800,6,r.taxa/100),10000,.000001);});
+test('Taxa implícita negativa, zero e entrada sem financiamento',()=>{assert.ok(C.irr(10000,0,1500,6)<0);assert.equal(C.irr(10000,0,1000,10),0);assert.equal(C.irr(10000,10000,1000,10),null);assert.equal(C.irr(10000,11000,1000,10),null);});
+test('120 parcelas, entrada e desconto no tempo',()=>{const r=C.calc('compra',{vista:50000,entrada:2000,parcela:1000,meses:120,taxa:1.5});assert.equal(r.total,122000);assert.equal(r.fluxo.length,121);close(r.fluxo[0].presente,2000);close(C.pv(1000,120,r.taxa/100),48000,.00001);});
+const itr={situacao:'tributavel',total:100,excluida:20,benfeitoria:5,utilizada:60,vtn:1000000};
+test('ITR: exemplo 80% exatos = 0,40% e R$ 3.200',()=>{const r=C.calc('itr',itr);assert.equal(r.gu,80);assert.equal(r.aliquota,.4);assert.equal(r.itr,3200);assert.equal(r.vtnT,800000);});
+test('ITR: imediatamente acima de 80% muda faixa',()=>{assert.equal(C.calc('itr',{...itr,utilizada:60.1}).aliquota,.07);});
+test('ITR: fronteiras de GU 30, 50, 65 e 80%',()=>{for(const [used,rate]of [[30,2],[30.1,1.4],[50,1.4],[50.1,.8],[65,.8],[65.1,.4],[80,.4],[80.1,.07]])assert.equal(C.calc('itr',{...itr,total:100,excluida:0,benfeitoria:0,utilizada:used}).aliquota,rate);});
+test('ITR: fronteiras de área total',()=>{for(const [area,rate]of [[50,.03],[50.1,.07],[200,.07],[200.1,.1],[500,.1],[500.1,.15],[1000,.15],[1000.1,.3],[5000,.3],[5000.1,.45]])assert.equal(C.calc('itr',{...itr,total:area,excluida:0,benfeitoria:0,utilizada:area}).aliquota,rate);});
+test('ITR: mínimo, sem área aproveitável e exclusão total',()=>{let r=C.calc('itr',{...itr,vtn:0});assert.equal(r.itr,10);r=C.calc('itr',{...itr,excluida:100,benfeitoria:0,utilizada:0});assert.equal(r.itr,10);assert.equal(r.gu,null);assert.equal(r.aliquota,.07);r=C.calc('itr',{...itr,excluida:0,benfeitoria:100,utilizada:0});assert.equal(r.gu,null);assert.equal(r.itr,700);});
+test('ITR: rejeita áreas incompatíveis e não afirma isenção',()=>{assert.throws(()=>C.calc('itr',{...itr,utilizada:76}));assert.throws(()=>C.calc('itr',{...itr,excluida:101}));assert.deepEqual(C.calc('itr',{situacao:'incerta'}),{blocked:true});});
+fs.writeFileSync(path.join(__dirname,'resultados.json'),JSON.stringify({date:'2026-10-20',passed:done.length,tests:done},null,2));

@@ -31,3 +31,11 @@ Curadoria: Victor Hugo. Análises e implementação: Aster, com revisão de Vict
 Observações visuais, interpretações e hipóteses são diferenciadas. Capturas não demonstram interação, acessibilidade completa, desempenho ou conversão. Lorem ipsum e dados fictícios são aceitáveis em estudos de composição. Os quatro arquivos ausentes estão identificados e não foram analisados.
 
 As fontes de princípios e termos estão junto das respectivas entradas. Os estudos anotados mantêm os pixels da referência: recorte e marcações são apresentados por CSS, sem redesenhar a peça.
+
+<!-- design-pack:start -->
+## Pack Aster e padrão RuralZap · 21/10/2026
+
+[Guia do pack](PACK-DESIGN.md) · [Padrão aprovado para o redesign](padroes/ruralzap-2026-10-21/GUIA.md) · [Demonstração preservada](padroes/ruralzap-2026-10-21/demo/index.html)
+
+Quatro skills de UX/UI com pesquisa visual por padrão em criação/redesign, contratos de interação e critérios de revisão. A direção RuralZap inclui tokens, ilustrações, receita para novas cenas, capturas e snapshot funcional. A identidade é específica da marca; as regras gerais ficam nas skills. Esta atualização não adiciona novos originais de terceiros ao acervo publicado.
+<!-- design-pack:end -->

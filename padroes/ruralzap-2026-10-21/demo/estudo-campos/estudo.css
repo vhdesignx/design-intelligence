@@ -1,0 +1,80 @@
+/* A: contorno fino, branco e seleção cinza. B: fundo quente e relevos brancos. */
+body[data-control-style]{--field-ink:#252925;--field-muted:#6b6e69;--field-focus:#758b65}
+body[data-control-style] .input-panel{padding:28px;background:#fcfcfb}
+body[data-control-style] .input-panel .panel-heading{margin-bottom:19px}
+body[data-control-style] .input-panel .panel-heading h2{font-size:21px;letter-spacing:-.045em;font-weight:600}
+body[data-control-style] .input-panel #example{background:linear-gradient(#fff,#f3f3f1);border:1px solid #dedfdb;color:#465443;border-radius:10px;box-shadow:inset 0 1px 0 white,0 1px 2px #25292508;font-weight:500}
+.field-study{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 22px;padding-bottom:17px;border-bottom:1px solid #e8e8e5;font-size:11px;color:#71746c}
+.field-study [role=group]{display:flex;padding:3px;border-radius:10px;background:#eeefeb;gap:2px}
+.field-study button{font:500 11px Manrope,Arial,sans-serif;padding:9px 10px;min-height:34px;border:0;border-radius:7px;background:transparent;color:#64685e;cursor:pointer;white-space:nowrap}
+.field-study button[aria-pressed=true]{background:#fff;color:#272c23;box-shadow:0 1px 3px #292e201a,inset 0 0 0 1px #fff}
+.field-study button:focus-visible{outline:2px solid #758b65;outline-offset:2px}
+body[data-control-style] .account-form .field-grid{gap:17px 12px}
+body[data-control-style] .account-control,body[data-control-style] .account-select{min-height:70px;padding:11px 15px 12px;border:1px solid #dcded9;border-radius:14px;background:linear-gradient(180deg,#fff,#fcfcfb);box-shadow:inset 0 1px 0 #fff,0 1px 2px #22251c07;color:var(--field-ink);transition:background-color 160ms,border-color 160ms,box-shadow 160ms}
+body[data-control-style] .account-control:hover,body[data-control-style] .account-select:hover{border-color:#c5c9bf;box-shadow:inset 0 1px 0 #fff,0 2px 4px #22251c09}
+body[data-control-style] .account-control:focus-within,body[data-control-style] .account-select:focus-visible{border-color:var(--field-focus);background:#fff;box-shadow:0 0 0 3px #758b6518,0 2px 4px #22251c06;outline:0}
+body[data-control-style] .account-select[aria-expanded=true]{border-color:#c3c7bb;background:#fff;box-shadow:0 0 0 2px #2d362b07}
+body[data-control-style] .account-label{font-size:12px;line-height:1.35;font-weight:400;color:var(--field-muted)}
+body[data-control-style] .account-control:focus-within .account-label,body[data-control-style] .account-select[aria-expanded=true] .account-label{color:#516547}
+body[data-control-style] .account-input-row{margin-top:5px;gap:7px;align-items:baseline}
+body[data-control-style] .account-input{font-size:21px;line-height:1.3;font-weight:500;letter-spacing:-.025em;color:var(--field-ink)}
+body[data-control-style] .account-input::placeholder{color:#8a8d85;font-weight:400}
+body[data-control-style] .input-prefix{font-size:14px;font-weight:400;color:#6d7467}
+body[data-control-style] .input-unit{font-size:12px;font-weight:400;color:#6d7467}
+body[data-control-style] .select-value{font-size:15px;line-height:1.4;margin-top:5px;color:var(--field-ink);font-weight:500;letter-spacing:-.02em}
+body[data-control-style] .select-chevron{width:17px;height:17px;color:#73796e}
+body[data-control-style] .account-form .field-help{font-size:11px;line-height:1.55;color:#73776d;margin:6px 3px 0}
+body[data-control-style] .account-form .form-actions{margin-top:23px;gap:16px}
+body[data-control-style] .account-form .form-actions .button{min-height:46px;border-radius:12px;font-size:13px;background:linear-gradient(180deg,#3c5237,#293f2b);border:1px solid #2d442d;box-shadow:inset 0 1px 0 #ffffff2b,0 1px 2px #1f302a20,0 4px 8px #2331220c;transition:filter 160ms,transform 160ms,box-shadow 160ms}
+body[data-control-style] .account-form .form-actions .button:hover{filter:brightness(1.08);box-shadow:inset 0 1px 0 #ffffff2b,0 4px 9px #23312222}
+body[data-control-style] .account-form .form-actions .button:active{transform:translateY(1px);filter:brightness(.96);box-shadow:inset 0 1px 3px #0002}
+body[data-control-style] .account-form .form-note{font-size:10px;color:#7b8074;margin-top:15px}
+body[data-control-style] .account-form .invalid .account-control,body[data-control-style] .account-form .invalid .account-select{border-color:#bc695b;box-shadow:0 0 0 3px #bc695b12;background:#fffcfa}
+body[data-control-style] .account-options{padding:7px;background:#fefefd;border:1px solid #dedfda;border-radius:20px;box-shadow:inset 0 1px 0 #fff,0 1px 2px #20251b12,0 12px 20px -12px #20251b38,0 22px 40px -18px #20251b26;scrollbar-color:#d7d8d2 transparent;scroll-padding:8px}
+body[data-control-style] .account-option{min-height:48px;padding:11px 13px;border-radius:13px;gap:12px;box-shadow:none;color:#242924;background:transparent;transition:background-color 140ms,box-shadow 140ms}
+body[data-control-style] .option-title{font-size:14px;line-height:1.45;font-weight:500;letter-spacing:-.015em}
+body[data-control-style] .option-icon{width:20px;height:20px;flex:none;color:#474f43}
+body[data-control-style] .option-text{flex:1}
+body[data-control-style] .option-hint{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+body[data-control-style] .account-option[aria-selected=true]{background:transparent}
+body[data-control-style] .account-option[data-active=true]{background:#f0f1ee;box-shadow:none}
+body[data-control-style] .option-check{width:17px;height:17px;color:#4e6742;stroke-width:2}
+body[data-control-style] .option-context{font-size:11px;line-height:1.55;color:#73776f;margin:7px -7px -7px;padding:12px 17px;border-top:1px solid #eceee7;background:#fafbf7;border-radius:0 0 19px 19px;min-height:43px}
+body[data-control-style] .option-context:empty{display:none}
+body[data-control-style=b] .input-panel{background:#f7f6f3}
+body[data-control-style=b] .account-control,body[data-control-style=b] .account-select{background:#edece7;border:1px solid transparent;border-radius:14px;box-shadow:inset 0 1px 2px #4b423507,inset 0 -1px 0 #fff9}
+body[data-control-style=b] .account-control:hover,body[data-control-style=b] .account-select:hover{background:#e9e9e2;border-color:#e3e3db}
+body[data-control-style=b] .account-control:focus-within,body[data-control-style=b] .account-select:focus-visible{background:#fff;border-color:#829473;box-shadow:0 0 0 3px #758b6518,0 2px 3px #3e352b0b}
+body[data-control-style=b] .account-select[aria-expanded=true]{background:#e8e8df;border-color:transparent;box-shadow:inset 0 1px 2px #4b423507}
+body[data-control-style=b] .account-options{padding:5px;border:1px solid #eeeee6;background:#f4f3ef;border-radius:18px;box-shadow:inset 0 1px 0 #fff,0 2px 3px #4d423a14,0 13px 18px -7px #4d423a29,0 24px 32px -16px #4d423a17}
+body[data-control-style=b] .account-option{background:linear-gradient(180deg,#fff,#fefefd);border-radius:12px;margin:2px 0;padding:12px 13px;box-shadow:inset 0 1px 0 white,0 1px 2px #3d352b04}
+body[data-control-style=b] .account-option[aria-selected=true]{background:linear-gradient(180deg,#fff,#fefefd)}
+body[data-control-style=b] .account-option[data-active=true]{background:#e8e8e1;box-shadow:inset 0 1px 2px #4d594218}
+body[data-control-style=b] .option-context{background:transparent;border-top:0;margin:3px 0 0;padding:10px 12px 8px;border-radius:0;color:#6d7266}
+@media(min-width:421px){body[data-control-style] .account-form:has([name=producao]) .field-grid{grid-template-columns:repeat(7,minmax(0,1fr))}body[data-control-style] .account-form:has([name=producao]) [data-field=escopo]{grid-column:span 7}body[data-control-style] .account-form:has([name=producao]) [data-field=custo],body[data-control-style] .account-form:has([name=producao]) [data-field=producao]{grid-column:span 4}body[data-control-style] .account-form:has([name=producao]) [data-field=area],body[data-control-style] .account-form:has([name=producao]) [data-field=peso]{grid-column:span 3}}
+@media(max-width:760px){body[data-control-style] .input-panel{padding:23px}body[data-control-style] .account-input{font-size:22px}body[data-control-style] .account-control,body[data-control-style] .account-select{min-height:72px}body[data-control-style] .select-value{font-size:16px}}
+@media(max-width:420px){body[data-control-style] .input-panel{padding:22px 18px}body[data-control-style] .input-panel .panel-heading{gap:8px}body[data-control-style] .input-panel .panel-heading h2{font-size:19px}body[data-control-style] .input-panel #example{font-size:11px;padding:8px;min-height:38px}body[data-control-style] .account-control,body[data-control-style] .account-select{padding:10px 12px}body[data-control-style] .account-form .field-grid{gap:16px 11px}.field-study{flex-wrap:wrap;gap:8px;margin-bottom:20px}.field-study>span{font-size:10px}body[data-control-style] .account-form .field-help{font-size:11px}body[data-control-style] .account-option{padding:12px 11px;gap:10px}body[data-control-style] .option-title{font-size:14px}body[data-control-style] .option-context{font-size:11px}}
+@media(prefers-reduced-motion:reduce){body[data-control-style] .account-control,body[data-control-style] .account-select,body[data-control-style] .account-option,body[data-control-style] .account-form .form-actions .button{transition:none}}
+/* Estados da terceira referência: repouso interno, foco/valor na borda. */
+body[data-control-style] .account-control,body[data-control-style] .account-select{--control-fill:#fff;position:relative;min-height:58px;padding:16px 15px 11px;background:var(--control-fill);border-radius:12px}
+body[data-control-style] .account-form .field-grid{row-gap:22px}
+body[data-control-style] .account-label{position:absolute;left:15px;top:0;padding:0 5px;margin-left:-5px;font-size:14px;font-weight:400;line-height:20px;max-width:calc(100% - 28px);color:#6b7165;background:var(--control-fill);transform:translateY(18px);transform-origin:left center;pointer-events:none;transition:transform 190ms cubic-bezier(.2,.8,.2,1),color 160ms}
+body[data-control-style] .account-control:focus-within .account-label,body[data-control-style] .account-control.is-filled .account-label,body[data-control-style] .account-select .account-label{transform:translateY(-10px) scale(.86);color:#5b6354;white-space:nowrap}
+body[data-control-style] .account-input-row{margin-top:0}
+body[data-control-style] .account-input{font-size:21px;line-height:28px}
+body[data-control-style] .account-input::placeholder{color:transparent}
+body[data-control-style] .account-control:not(.is-filled):not(:focus-within) .input-prefix,body[data-control-style] .account-control:not(.is-filled):not(:focus-within) .input-unit{opacity:0}
+body[data-control-style] .account-control:focus-within{--control-fill:#fff;border-color:#394a39;box-shadow:0 0 0 1px #394a3915}
+body[data-control-style] .account-control:focus-within .account-label{color:#394a39}
+body[data-control-style] .account-select{padding-top:17px;padding-bottom:13px}
+body[data-control-style] .select-value{margin:0;font-size:16px;line-height:26px}
+body[data-control-style] .account-form .invalid .account-control{--control-fill:#fffcfa;border-color:#bd4a40;box-shadow:0 0 0 1px #bd4a400c}
+body[data-control-style] .account-form .invalid .account-label{color:#b13d32}
+body[data-control-style] .account-form .error-message{font-size:11px;color:#b13d32}
+body[data-control-style=b] .account-control,body[data-control-style=b] .account-select{--control-fill:#edece7;background:var(--control-fill)}
+body[data-control-style=b] .account-control:focus-within,body[data-control-style=b] .account-select[aria-expanded=true]{--control-fill:#fff;background:#fff;border-color:#8d9b82}
+body[data-control-style] .account-control:has(input:disabled){--control-fill:#f2f3ef;background:var(--control-fill);border-color:#dedfd9;box-shadow:none;cursor:not-allowed}
+body[data-control-style] .account-control:has(input:disabled) .account-label,body[data-control-style] .account-input:disabled{color:#979c90;cursor:not-allowed}
+@media(max-width:420px){body[data-control-style] .account-control,body[data-control-style] .account-select{padding-left:12px;padding-right:12px}body[data-control-style] .account-label{left:12px}body[data-control-style] .account-input{font-size:21px}}
+@media(prefers-reduced-motion:reduce){body[data-control-style] .account-label{transition:none}}
+@media print{.field-study{display:none!important}body[data-control-style] .account-control,body[data-control-style] .account-select{background:white;box-shadow:none;min-height:50px}}
